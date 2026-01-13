@@ -17,16 +17,17 @@ Since the LCD 16x02 has multiple pins, it’s helpful to organize them:
 This structure ensures proper operation and simplifies wiring with the ESP32.
 
 Pin Ground:
-| Commanding Ground | Data Pin Ground | 
+| Commanding Ground | Data Pin Ground |
 ---------------------------------------
 |        RS         |       D0        |
 |        RW         |       D1        |
-|      ENABLE       |       D2        | 
+|      ENABLE       |       D2        |
 |                   |       D3        |
 |                   |       D4        |
 |                   |       D5        |
 |                   |       D6        |
-|                   |       D7        | 
+|                   |       D7        |
+
 
 **RS** (Register Select): This pin determines the LCD mode. Setting RS to 0 selects command mode, which allows you to control the LCD, such as choosing a row or configuring settings. Setting RS to 1 selects data mode, enabling you to write characters directly to the LCD.
 
