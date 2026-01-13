@@ -47,6 +47,8 @@ Special Note on LCD Modes: LCDs support two modes for data transfer:
 
 - 4-bit mode: Uses only the upper four data pins (D4–D7), simplifying wiring while still allowing full functionality.
 
+Other pins like VDD and Anode connect to +5, while VSS, V0, Cathode connect to GND.
+
 ** Recommend Wiring:
 
 | LCD Pin | Function        | ESP32 GPIO    |
