@@ -17,6 +17,7 @@ Since the LCD 16x02 has multiple pins, it’s helpful to organize them:
 This structure ensures proper operation and simplifies wiring with the ESP32.
 
 Pin Ground:
+
 | Commanding Ground | Data Pin Ground |
 ---------------------------------------
 |        RS         |       D0        |
