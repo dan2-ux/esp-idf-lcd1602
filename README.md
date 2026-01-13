@@ -2,6 +2,9 @@
 
 I created a repository containing the components needed for the ESP32 to work with the LCD 16x02.
 
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/19d10dde-bb40-4f7f-af51-232489787d73" />
+
+
 ## How the LCD 16x02 Works
 
 The LCD 16x02 uses a built-in HD44780 controller to manipulate liquid crystals and polarized light. By controlling whether light can pass through or is blocked, it creates characters and symbols on the screen.
