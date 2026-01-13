@@ -19,7 +19,7 @@ This structure ensures proper operation and simplifies wiring with the ESP32.
 Pin Ground:
 
 | Commanding Ground | Data Pin Ground |
----------------------------------------
+|-------------------|-----------------|
 |        RS         |       D0        |
 |        RW         |       D1        |
 |      ENABLE       |       D2        |
