@@ -55,4 +55,4 @@ Special Note on LCD Modes: LCDs support two modes for data transfer:
 | D6      | Data bit 6      | `GPIO_NUM_21` |
 | D7      | Data bit 7      | `GPIO_NUM_22` |
 
-## Warning: this component doesn't support reading LCD function. Therefore, RW should be connect to GND to make the LCD in the writing mode contineously.
+## Warning: this component doesn't support reading LCD function. Therefore, RW should be connect to GND to make the LCD in the writing mode continuously.
