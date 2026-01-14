@@ -11,6 +11,7 @@ lcd::LCD::lcd_pins lcdPins = {
     .pin_d7 = GPIO_NUM_5
 };
 
+lcd::LCD lcd_mode(lcdPins);
 
 extern "C" void app_main()
 {
