@@ -2,9 +2,15 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-lcd::LCD lcd_mode(GPIO_NUM_4, GPIO_NUM_14,
-                  GPIO_NUM_25, GPIO_NUM_26,
-                  GPIO_NUM_32, GPIO_NUM_33);
+lcd::LCD::lcd_pins lcdPins = {
+    .pin_rs = GPIO_NUM_21,
+    .pin_en = GPIO_NUM_22,
+    .pin_d4 = GPIO_NUM_18,
+    .pin_d5 = GPIO_NUM_19,
+    .pin_d6 = GPIO_NUM_23,
+    .pin_d7 = GPIO_NUM_5
+};
+
 
 extern "C" void app_main()
 {
