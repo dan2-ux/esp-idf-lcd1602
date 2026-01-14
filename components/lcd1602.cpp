@@ -3,19 +3,19 @@
 void lcd::LCD::lcd_init()
 {
     vTaskDelay(pdMS_TO_TICKS(500));
-    gpio_reset_pin(pin_rs);
-    gpio_reset_pin(pin_en);
-    gpio_reset_pin(pin_d4);
-    gpio_reset_pin(pin_d5);
-    gpio_reset_pin(pin_d6);
-    gpio_reset_pin(pin_d7);
+    gpio_reset_pin(pins.pin_rs);
+    gpio_reset_pin(pins.pin_en);
+    gpio_reset_pin(pins.pin_d4);
+    gpio_reset_pin(pins.pin_d5);
+    gpio_reset_pin(pins.pin_d6);
+    gpio_reset_pin(pins.pin_d7);
 
-    gpio_set_direction(pin_rs, GPIO_MODE_OUTPUT);
-    gpio_set_direction(pin_en, GPIO_MODE_OUTPUT);
-    gpio_set_direction(pin_d4, GPIO_MODE_OUTPUT);
-    gpio_set_direction(pin_d5, GPIO_MODE_OUTPUT);
-    gpio_set_direction(pin_d6, GPIO_MODE_OUTPUT);
-    gpio_set_direction(pin_d7, GPIO_MODE_OUTPUT);
+    gpio_set_direction(pins.pin_rs, GPIO_MODE_OUTPUT);
+    gpio_set_direction(pins.pin_en, GPIO_MODE_OUTPUT);
+    gpio_set_direction(pins.pin_d4, GPIO_MODE_OUTPUT);
+    gpio_set_direction(pins.pin_d5, GPIO_MODE_OUTPUT);
+    gpio_set_direction(pins.pin_d6, GPIO_MODE_OUTPUT);
+    gpio_set_direction(pins.pin_d7, GPIO_MODE_OUTPUT);
 
     sendBit(0, 0x3);
     vTaskDelay(pdMS_TO_TICKS(5));
