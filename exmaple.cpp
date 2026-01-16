@@ -2,7 +2,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-lcd::LCD::lcd_pins lcdPins = {
+lcd::lcd_pins lcdPins = {
     .pin_rs = GPIO_NUM_21,
     .pin_en = GPIO_NUM_22,
     .pin_d4 = GPIO_NUM_18,
