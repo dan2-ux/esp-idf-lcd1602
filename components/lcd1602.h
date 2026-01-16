@@ -4,17 +4,17 @@
 
 namespace lcd
 {
-    class LCD
-    {
-    private:
-        typedef struct {
+    typedef struct {
             gpio_num_t pin_rs;
             gpio_num_t pin_en;
             gpio_num_t pin_d4;
             gpio_num_t pin_d5;
             gpio_num_t pin_d6;
             gpio_num_t pin_d7;
-        } lcd_pins;
+    } lcd_pins;
+    class LCD
+    {
+    private:
 
         lcd_pins pins;
         void pulse_en()
